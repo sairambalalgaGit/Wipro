@@ -1,0 +1,63 @@
+/* Modern Navy Gradient Navbar */
+.glass-nav {
+  background: linear-gradient(135deg, #0a2342, #1d3557); /* navy shades */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Navbar brand */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff !important;
+  letter-spacing: 1px;
+  transition: transform 0.2s ease;
+}
+.navbar-brand:hover {
+  transform: scale(1.05);
+  color: #a8dadc !important; /* teal accent */
+}
+
+/* Nav links */
+.nav-link {
+  color: #e0e0e0 !important;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+.nav-link:hover {
+  color: #a8dadc !important; /* soft teal highlight */
+  transform: translateY(-2px);
+}
+
+/* Primary buttons */
+.btn-outline-light {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+.btn-outline-light:hover {
+  background: #a8dadc;
+  color: #0a2342;
+  border-color: #a8dadc;
+}
+
+/* Secondary buttons */
+.btn-light {
+  background: #f1faee;
+  color: #0a2342;
+  transition: all 0.3s ease;
+}
+.btn-light:hover {
+  background: #a8dadc;
+  color: #0a2342;
+}
+
+/* Logout button */
+.btn-danger {
+  background: #e63946;
+  border: none;
+  transition: all 0.3s ease;
+}
+.btn-danger:hover {
+  background: #c62828;
+}

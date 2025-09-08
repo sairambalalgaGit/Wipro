@@ -1,0 +1,95 @@
+/* Background Gradient - Navy Dominant */
+.register-wrapper {
+  background: linear-gradient(135deg, #001f3f , #ffffff );
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Glassmorphism Card */
+.register-card {
+  background: rgba(255, 255, 255, 0.15); /* semi-transparent white */
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  color: #fff;
+  transition: transform 0.3s ease;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.25); /* subtle glass border */
+}
+
+
+.register-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Heading (center only the title) */
+.register-card h2 {
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+/* Labels - LEFT aligned */
+.form-label {
+  display: block;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #ffffff;
+}
+
+/* Inputs */
+.form-control {
+  background: rgba(255, 255, 255, 0.85);
+  border: none;
+  color: #001f3f;
+  font-size: 14px;
+  border-radius: 50px;
+  padding-left: 1rem;
+}
+
+/* Dropdown (Role only) */
+.form-select {
+  background: rgba(255, 255, 255, 0.85);
+  border: none;
+  color: #001f3f;
+  font-size: 14px;
+  border-radius: 50px;
+  padding-right: 2.5rem; /* space for arrow */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23001f3f' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592c.86 0 1.319 1.013.753 1.658l-4.796 5.482a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border: none;
+  box-shadow: 0 0 10px rgba(13, 110, 253, 0.6);
+}
+
+/* Gradient Button */
+.btn-gradient {
+  background: linear-gradient(135deg, #001f3f, #004080);
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(135deg, #004080, #001f3f);
+  transform: scale(1.05);
+}
+
+/* Link */
+.register-link {
+  color: #f1f1f1 !important;
+}
+
+.register-link:hover {
+  color: #d1d1d1 !important;
+  text-decoration: underline;
+}

@@ -1,0 +1,63 @@
+<div class="container mt-5">
+
+  <!-- ✅ Top Properties Toggle aligned to right -->
+  <div class="d-flex justify-content-end mb-3">
+    <button class="btn btn-lg btn-gradient px-4 py-2" (click)="toggleTop()">
+      <i class="bi" [ngClass]="showTop ? 'bi-chevron-up' : 'bi-star-fill'"></i>
+      {{ showTop ? 'Hide Top Properties' : 'Show Top Properties' }}
+    </button>
+  </div>
+
+
+  <app-top-properties *ngIf="showTop"></app-top-properties>
+</div>
+
+
+<div class="container mt-5">
+  <h2 class="text-center fw-bold mb-4">
+    <i class="bi bi-house-door-fill text-primary"></i> Available Properties
+  </h2>
+
+  <div class="row g-4">
+    <div class="col-md-4" *ngFor="let property of properties">
+      <div class="card h-100 shadow border-0 rounded-3 overflow-hidden hover-card">
+
+   
+        <img [src]="property.images?.split(',')[0] || 'https://via.placeholder.com/400x200'" 
+             class="card-img-top property-img" alt="Property">
+
+        <div class="card-body d-flex flex-column">
+          <!-- Title -->
+          <h5 class="card-title text-truncate fw-semibold">{{ property.title }}</h5>
+
+          <!-- Location -->
+          <p class="text-muted mb-2">
+            <i class="bi bi-geo-alt-fill text-danger"></i> {{ property.location }}
+          </p>
+
+          <!-- Price & Rating -->
+          <p class="fw-bold mb-1 text-success">
+            <i class="bi bi-currency-rupee"></i>{{ property.pricePerNight | number }}
+          </p>
+          <span class="badge bg-warning text-dark mb-3">
+            <i class="bi bi-star-fill"></i> {{ property.rating }}
+          </span>
+
+          <!-- Actions -->
+          <div class="mt-auto">
+            <a [routerLink]="['/property', property.propertyId]" 
+              class="btn custom-btn w-100 mb-2">
+              <i class="bi bi-eye-fill"></i> View Details
+            </a>
+
+
+            <button class="btn btn-outline-primary w-100"
+                    (click)="selectProperty(property)">
+              <i class="bi bi-bookmark-plus"></i> Select Property
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

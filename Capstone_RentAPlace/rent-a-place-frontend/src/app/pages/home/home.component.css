@@ -1,0 +1,33 @@
+.property-img {
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.hover-card:hover .property-img {
+  transform: scale(1.05);
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, #02335b, #5fddf4);
+  color: white;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-gradient:hover {
+  opacity: 0.9;
+  background: linear-gradient(90deg, #5fddf4, #e0e0e0);
+  color: #100f0f;
+}
+
+.custom-btn {
+  background: linear-gradient(90deg, #02335b, #5fddf4);
+  color: #fff;
+  border: none;
+}
+
+.custom-btn:hover {
+  background: linear-gradient(90deg, #5fddf4, #e0e0e0);
+  color: #100f0f;
+}

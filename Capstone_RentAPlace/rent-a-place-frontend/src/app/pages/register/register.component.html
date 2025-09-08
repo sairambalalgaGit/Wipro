@@ -1,0 +1,53 @@
+<div class="register-wrapper d-flex justify-content-center align-items-center min-vh-100">
+  <div class="register-card shadow-lg border-0 rounded-4 p-4 col-md-6 col-lg-5">
+    <h2 class="text-center fw-bold mb-4">Create Account</h2>
+    <form (ngSubmit)="register()">
+      <div class="mb-3">
+        <label class="form-label fw-semibold text-start d-block">Name</label>
+        <input 
+          type="text" 
+          [(ngModel)]="name" 
+          name="name" 
+          class="form-control rounded-pill px-3" 
+          placeholder="Enter your name" 
+          required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label fw-semibold text-start d-block">Email</label>
+        <input 
+          type="email" 
+          [(ngModel)]="email" 
+          name="email" 
+          class="form-control rounded-pill px-3" 
+          placeholder="Enter your email" 
+          required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label fw-semibold text-start d-block">Password</label>
+        <input 
+          type="password" 
+          [(ngModel)]="password" 
+          name="password" 
+          class="form-control rounded-pill px-3" 
+          placeholder="Enter your password" 
+          required>
+      </div>
+      <div class="mb-4">
+        <label class="form-label fw-semibold text-start d-block">Role</label>
+        <select 
+          [(ngModel)]="role" 
+          name="role" 
+          class="form-select rounded-pill px-3 role-select">
+          <option>User</option>
+          <option>Owner</option>
+        </select>
+      </div>
+      <button class="btn btn-gradient w-100 rounded-pill py-2 fw-semibold">Register</button>
+    </form>
+    <p class="text-center mt-3 text-light">Already have an account? 
+      <a class="btn btn-link text-decoration-none fw-semibold register-link" (click)="goToLogin()">
+        Login
+      </a>
+    </p>
+  </div>
+</div>
