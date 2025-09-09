@@ -1,8 +1,8 @@
 using System.Diagnostics;
-using EcommerceRoutingDemo.Models;
+using BankingMVC.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace EcommerceRoutingDemo.Controllers
+namespace BankingMVC.Controllers
 {
     public class HomeController : Controller
     {

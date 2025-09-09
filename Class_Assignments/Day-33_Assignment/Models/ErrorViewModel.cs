@@ -1,4 +1,4 @@
-namespace EcommerceRoutingDemo.Models
+namespace BankingMVC.Models
 {
     public class ErrorViewModel
     {
